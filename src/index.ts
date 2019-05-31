@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 type Agents = 'Clippy' | 'Merlin' | 'Links' | 'Rover';
 
-const useClippy = (human: Agents = 'Clippy') => {
+export const useClippy = (human: Agents = 'Clippy') => {
   const [clippy, setClippy] = useState(null);
   const [updatedClippy, setUpdatedClippy] = useState([0, () => { }]);
 
@@ -24,5 +24,3 @@ const useClippy = (human: Agents = 'Clippy') => {
     setUpdatedClippy(([count]: any) => [count + 1, cb]);
   };
 };
-
-export default useClippy;
