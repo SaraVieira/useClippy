@@ -2,23 +2,24 @@
 
 Put your clippy in your react app as hook because why not?
 
-Seriously? Why not? Sounds like an amazing idea right? So we made it
-You are welcome 🌈
+Seriously? Why not? Sounds like an amazing idea right? So we made it You are welcome 🌈
 
 Made with @walaura
 
 ## Usage
 
 ```jsx
-import useClippy from 'useClippy';
+import useClippy from 'use-clippy-now'
 
 function App() {
-  const withClippy = useClippy('Clippy');
+  const withClippy = useClippy('Clippy')
   return (
-    <button onClick={() => withClippy(clippy => clippy.speak('SUPPP'))}>
+    <button
+      onClick={() => withClippy(clippy => clippy.speak('SUPPP'))}
+    >
       Clippy says
     </button>
-  );
+  )
 }
 ```
 
@@ -34,7 +35,7 @@ Yes, it also supports Clippy friends ofc:
 ## Animations
 
 ```js
-withClippy(clippy => clippy.animate('CheckingSomething'));
+withClippy(clippy => clippy.animate('CheckingSomething'))
 ```
 
 Available Animations:
