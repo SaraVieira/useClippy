@@ -1,6 +1,6 @@
 {
   "name": "use-clippy-now",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/index.js",
   "umd:main": "dist/use-clippy-now.umd.production.js",
   "module": "dist/use-clippy-now.es.production.js",
