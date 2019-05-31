@@ -1,0 +1,39 @@
+{
+  "name": "use-clippy",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "umd:main": "dist/use-clippy.umd.production.js",
+  "module": "dist/use-clippy.es.production.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "posttest": "npm run format",
+    "format": "prettier --write '**/*.{ts,md}'"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "husky": "^2.3.0",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0",
+    "tsdx": "^0.6.1",
+    "tslib": "^1.9.3",
+    "typescript": "^3.5.1",
+    "@types/react": "^16.8.19",
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "clippyjs": "^0.0.3",
+    "jquery": "^3.4.1"
+  },
+  "license": "MIT"
+}
