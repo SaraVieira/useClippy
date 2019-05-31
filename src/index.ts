@@ -1,12 +1,20 @@
-import 'jquery';
-import clippyjs from 'clippyjs';
-import { useEffect, useState } from 'react';
+import "jquery";
+import clippyjs from "clippyjs";
+import styles from "./style";
+import { useEffect, useState } from "react";
 
-type Agents = 'Clippy' | 'Merlin' | 'Links' | 'Rover';
+type Agents = "Clippy" | "Merlin" | "Links" | "Rover";
 
-export const useClippy = (human: Agents = 'Clippy') => {
+export const useClippy = (human: Agents = "Clippy") => {
   const [clippy, setClippy] = useState(null);
   const [updatedClippy, setUpdatedClippy] = useState([0, () => { }]);
+
+  useEffect(() => {
+    const linkElement = document.createElement("style");
+    linkElement.innerHTML = styles.trim();
+
+    document.getElementsByTagName("head")[0].appendChild(linkElement);
+  }, []);
 
   useEffect(() => {
     clippyjs.load(human, (agent: any) => {
