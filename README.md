@@ -23,6 +23,8 @@ function App() {
 }
 ```
 
+https://codesandbox.io/s/useclippy-46mi1
+
 ## Friends
 
 Yes, it also supports Clippy friends ofc:
