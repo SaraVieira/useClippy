@@ -4,7 +4,7 @@ Put your clippy in your react app as hook because why not?
 
 Seriously? Why not? Sounds like an amazing idea right? So we made it You are welcome 🌈
 
-Made with @walaura
+Made with <a href="https://github.com/walaura">@walaura</a>
 
 ## Usage
 
