@@ -9,7 +9,7 @@ Made with <a href="https://github.com/walaura">@walaura</a>
 ## Usage
 
 ```jsx
-import useClippy from 'use-clippy-now'
+import { useClippy } from 'use-clippy-now'
 
 function App() {
   const withClippy = useClippy('Clippy')
